@@ -1,0 +1,6 @@
+<div [class.dark-theme]="themeService.isDark()">
+    <app-header-style-one></app-header-style-one>
+    <router-outlet></router-outlet>
+    <app-footer *ngIf="!(location == '/login' || location == '/register' || location == '/coming-soon')"></app-footer>
+    <!-- <app-theme-customizer></app-theme-customizer> -->
+</div>
